@@ -13,14 +13,11 @@ COPY src/_config.yml _config.yml
 RUN bundle install --path /vendor-gems
 
 WORKDIR /gems
-RUN wget -O master.zip https://github.com/gettalong/kramdown/archive/master.zip
-RUN apt-get update
-RUN apt-get install unzip --yes --force-yes
-RUN unzip master.zip
+RUN git clone https://github.com/gettalong/kramdown.git
 
 # Move local Kramdown to /vendor-gems
 RUN rm -rf /vendor-gems/ruby/2.3.0/gems/kramdown-1.9.0/
-RUN cp -r /gems/kramdown-master /vendor-gems/ruby/2.3.0/gems/kramdown-1.9.0
+RUN cp -r /gems/kramdown /vendor-gems/ruby/2.3.0/gems/kramdown-1.9.0
 
 WORKDIR /src
 
