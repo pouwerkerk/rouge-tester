@@ -6,7 +6,7 @@ author: pouwerkerk
 
 # Rouge `tonic_js` Demo
 
-## Default 
+## Default
 
 Simply specify the `tonic_js` lexer without any options (` ```tonic_js...``` `).
 
@@ -24,9 +24,16 @@ var greeting = "hello world!";
 console.log(greeting);
 ```
 
-### `read_only=1`
+### `read_only=false`
 
 ```tonic_js?read_only=1
+var greeting = "hello world!";
+console.log(greeting);
+```
+
+### `read_only`
+
+```tonic_js?read_only
 var greeting = "hello world!";
 console.log(greeting);
 ```
@@ -41,7 +48,7 @@ process.version;
 
 ### `node_version='>4.0.0'`
 
-```tonic_js?node_version='>4.0.0'
+```tonic_js?node_version=>4.0.0
 process.version;
 ```
 
