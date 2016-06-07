@@ -1,16 +1,16 @@
 ---
 layout: post
-title:  "Rouge `tonicjs` Demo"
+title:  "Rouge `tonic` Demo"
 author: pouwerkerk
 ---
 
-# Rouge `tonic_js` Demo
+# Rouge `tonic` Demo
 
 ## Default
 
-Simply specify the `tonic_js` lexer without any options (` ```tonic_js...``` `).
+Simply specify the `tonic` lexer without any options (` ```tonic...``` `).
 
-```tonic_js
+```tonic
 var greeting = "hello world!";
 console.log(greeting);
 ```
@@ -19,21 +19,21 @@ console.log(greeting);
 
 ### `readOnly=true`
 
-```tonic_js?readOnly=true
+```tonic?readOnly=true
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
 ### `readOnly=false`
 
-```tonic_js?readOnly=1
+```tonic?readOnly=1
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
 ### `readOnly`
 
-```tonic_js?readOnly
+```tonic?readOnly
 var greeting = "hello world!";
 console.log(greeting);
 ```
@@ -42,13 +42,13 @@ console.log(greeting);
 
 ### `nodeVersion=0.12.x`
 
-```tonic_js?nodeVersion=0.12.x
+```tonic?nodeVersion=0.12.x
 process.version;
 ```
 
 ### `nodeVersion='>4.0.0'`
 
-```tonic_js?nodeVersion=>4.0.0
+```tonic?nodeVersion=>4.0.0
 process.version;
 ```
 
@@ -56,7 +56,7 @@ process.version;
 
 ### `readOnly=false&nodeVersion=0.12.x`
 
-```tonic_js?readOnly=false&nodeVersion=0.12.x
+```tonic?readOnly=false&nodeVersion=0.12.x
 var greeting = "hello world!";
 console.log(greeting);
 
