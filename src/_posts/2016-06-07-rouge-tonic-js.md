@@ -17,46 +17,46 @@ console.log(greeting);
 
 ## Read Only
 
-### `read_only=true`
+### `readOnly=true`
 
-```tonic_js?read_only=true
+```tonic_js?readOnly=true
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
-### `read_only=false`
+### `readOnly=false`
 
-```tonic_js?read_only=1
+```tonic_js?readOnly=1
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
-### `read_only`
+### `readOnly`
 
-```tonic_js?read_only
+```tonic_js?readOnly
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
 ## Engine Version
 
-### `node_version=0.12.x`
+### `nodeVersion=0.12.x`
 
-```tonic_js?node_version=0.12.x
+```tonic_js?nodeVersion=0.12.x
 process.version;
 ```
 
-### `node_version='>4.0.0'`
+### `nodeVersion='>4.0.0'`
 
-```tonic_js?node_version=>4.0.0
+```tonic_js?nodeVersion=>4.0.0
 process.version;
 ```
 
 ## Multiple Options
 
-### `read_only=false&node_version=0.12.x`
+### `readOnly=false&nodeVersion=0.12.x`
 
-```tonic_js?read_only=false&node_version=0.12.x
+```tonic_js?readOnly=false&nodeVersion=0.12.x
 var greeting = "hello world!";
 console.log(greeting);
 
