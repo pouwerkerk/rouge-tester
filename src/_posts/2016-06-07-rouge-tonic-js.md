@@ -54,9 +54,9 @@ process.version;
 
 ## Multiple Options
 
-### `read_only=true&node_version=0.12.x`
+### `read_only=false&node_version=0.12.x`
 
-```tonic_js?read_only=true&node_version=0.12.x
+```tonic_js?read_only=false&node_version=0.12.x
 var greeting = "hello world!";
 console.log(greeting);
 
