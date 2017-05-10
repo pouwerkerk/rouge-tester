@@ -72,6 +72,16 @@ var R = require("ramda");
 var R = require("ramda");
 ```
 
+## Endpoint
+
+### `runkit_js?mode=endpoint`
+```runkit_js?mode=endpoint
+exports.endpoint = (req, res) =>
+{
+    res.end("Hello, world!");
+}
+```
+
 ## Multiple Options
 
 ### `read_only=false&node_version=0.12.x`
