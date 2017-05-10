@@ -52,6 +52,26 @@ process.version;
 process.version;
 ```
 
+## Timestamp
+
+### `runkit_js?package_resolution_timestamp=100`
+
+```runkit_js?package_resolution_timestamp=100
+var R = require("ramda");
+```
+
+### `runkit_js?package_resolution_timestamp=1451635200000`
+
+```runkit_js?package_resolution_timestamp=1451635200000
+var R = require("ramda");
+```
+
+### `runkit_js?package_resolution_timestamp=1483257600000`
+
+```runkit_js?package_resolution_timestamp=1483257600000
+var R = require("ramda");
+```
+
 ## Multiple Options
 
 ### `read_only=false&node_version=0.12.x`
