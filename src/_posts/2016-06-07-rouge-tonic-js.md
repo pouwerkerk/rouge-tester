@@ -1,62 +1,62 @@
 ---
 layout: post
-title:  "Rouge `tonic` Demo"
+title:  "Rouge `runkit_js` Demo"
 author: pouwerkerk
 ---
 
-# Rouge `tonic` Demo
+# Rouge `runkit_js` Demo
 
 ## Default
 
-Simply specify the `tonic` lexer without any options (` ```tonic...``` `).
+Simply specify the `runkit_js` lexer without any options (`runkit_js...`).
 
-```tonic
+```runkit_js
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
 ## Read Only
 
-### `readOnly=true`
+### `read_only=true`
 
-```tonic?readOnly=true
+```runkit_js?read_only=true
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
-### `readOnly=false`
+### `read_only=false`
 
-```tonic?readOnly=1
+```runkit_js?read_only=1
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
-### `readOnly`
+### `read_only`
 
-```tonic?readOnly
+```runkit_js?read_only
 var greeting = "hello world!";
 console.log(greeting);
 ```
 
 ## Engine Version
 
-### `nodeVersion=0.12.x`
+### `node_version=0.12.x`
 
-```tonic?nodeVersion=0.12.x
+```runkit_js?node_version=0.12.x
 process.version;
 ```
 
-### `nodeVersion='>4.0.0'`
+### `node_version='>4.0.0'`
 
-```tonic?nodeVersion=>4.0.0
+```runkit_js?node_version=>4.0.0
 process.version;
 ```
 
 ## Multiple Options
 
-### `readOnly=false&nodeVersion=0.12.x`
+### `read_only=false&node_version=0.12.x`
 
-```tonic?readOnly=false&nodeVersion=0.12.x
+```runkit_js?read_only=false&node_version=0.12.x
 var greeting = "hello world!";
 console.log(greeting);
 
