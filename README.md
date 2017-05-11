@@ -12,18 +12,12 @@ Simple tool to create a Docker image with [Jekyll](https://github.com/jekyll/jek
 docker build --rm -t rouge-tester .
 docker run -it --net host rouge-tester bash
 
+# Build Container
+```bash
+cd /media/psf/Home/Documents/rouge-tester && docker build --rm -t rouge-tester .
+```
 
-root@ubuntu:/gems# ls
-kramdown  rouge
-
-
-JavaScript disabled
-
-
-Add tonic support
-===
-
-Hello
-
-I have added Tonic lexer, where the user can select the Node version to get a runnable snippit. It falls back to use the JavaScript lexer if Tonic isn't available.
-
+## Run Container
+```
+docker run -it --net host rouge-tester
+```
